@@ -1,0 +1,6 @@
+<%- model_class = Contact -%>
+
+<% content_for :page_title do %>
+  <%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %>
+<% end %>
+<%= render :partial => 'form' %>
